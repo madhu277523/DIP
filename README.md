@@ -32,4 +32,19 @@ It is keyboard binding function .The function waits for specified milisecond for
 
 ![image](https://user-images.githubusercontent.com/72431161/104423517-0e819b00-5533-11eb-8493-a9cadcaa5f9f.png)
 
+## 2.Develop a program to perform linear transformation on a image(Scaling & Rotation).
+## a)Scaling
+## b) Rotation
 
+import cv2
+import numpy as np
+src=cv2.imread('pic.jpg')
+img=cv2.imshow('pic',src)
+cv2.waitKey(0)
+scale_p=200
+width=int(src.shape[1]*scale_p/100)
+height=int(src.shape[0]*scale_p/100)
+dsize=(width,height)
+result=cv2.resize(src,dsize)
+cv2.imshow('scaling',result)
+cv2.waitKey(0)
