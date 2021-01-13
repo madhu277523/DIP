@@ -7,17 +7,6 @@ Importance of grayscaling –
 Dimension reduction: For e.g. In RGB images there are three color channels and has three dimensions while grayscaled images are single dimensional.
 Reduces model complexity: Consider training neural article on RGB images of 10x10x3 pixel.The input layer will have 300 input nodes. On the other hand, the same neural network will need only 100 input node for grayscaled images.
 For other algorithms to work: There are many algorithms that are customized to work only on grayscaled images e.g. Canny edge detection function pre-implemented in OpenCV library works on Grayscaled images only.
-
-## Program:
-import cv2
-image=cv2.imread('pic.jpg')
-cv2.imshow('orinal image',image)
-gray_image=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-cv2.imshow('grayscale',gray_image)
-cv2.waitKey(0)
-cv2.imwrite("rose.jpg',gray_image)
-cv2.destroyAllWindows()
-
 ## imread()
 Loads an image from the specified file.
 
@@ -30,6 +19,18 @@ It is keyboard binding function .The function waits for specified milisecond for
 ## destroyAllWindows()
  simply destroy all the windows we created.
 
+
+## Program:
+import cv2
+image=cv2.imread('pic.jpg')
+cv2.imshow('orinal image',image)
+gray_image=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+cv2.imshow('grayscale',gray_image)
+cv2.waitKey(0)
+cv2.imwrite("rose.jpg',gray_image)
+cv2.destroyAllWindows()
+
+##Output:
 ![image](https://user-images.githubusercontent.com/72431161/104423517-0e819b00-5533-11eb-8493-a9cadcaa5f9f.png)
 
 ## 2.Develop a program to perform linear transformation on a image(Scaling & Rotation).
