@@ -91,5 +91,15 @@ cv2.waitKey(0)
  ## Output:
  ![image](https://user-images.githubusercontent.com/72431161/104425995-33c3d880-5536-11eb-89f7-9729c2054f2c.png)
  
- ## 
+ ## 4.Develop a program to convert a  color image to gray scale and binary image.
+import cv2
+originalimg=cv2.imread('pic.jpg')
+gray_image=cv2.cvtColor(originalimg,cv2.COLOR_BGR2GRAY)
+(thresh,blackAndWhiteImage)=cv2.threshold(gray_image,127,255,cv2.THRESH_BINARY)
+cv2.imshow('black and whiteimage',blackAndWhiteImage)
+cv2.imshow('Original Image',originalimg)
+cv2.imshow('Gray Image',gray_image)
+cv2.waitKey(0)
+## Output:
+
  
