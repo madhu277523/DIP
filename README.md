@@ -38,7 +38,7 @@ It is keyboard binding function .The function waits for specified milisecond for
 
 ## a) Scaling
 Scaling is just resizing of the image. OpenCV comes with a function cv.resize() for this purpose. The size of the image can be specified manually, or you can specify the scaling factor.
-
+## program:
 import cv2
 import numpy as np
 src=cv2.imread('pic.jpg')
@@ -51,4 +51,6 @@ dsize=(width,height)
 result=cv2.resize(src,dsize)
 cv2.imshow('scaling',result)
 cv2.waitKey(0)
+## Output:
+![image](https://user-images.githubusercontent.com/72431161/104424529-5c4ad300-5534-11eb-9cb9-a0cda4d1b767.png)
 
