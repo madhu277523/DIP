@@ -64,6 +64,7 @@ img=cv2.rotate(src,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow(windowsname,img)
 cv2.waitKey(0)
 Output:
+![image](https://user-images.githubusercontent.com/72431161/104425348-6caf7d80-5535-11eb-8568-24656759f92a.png)
 
 
 
