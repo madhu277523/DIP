@@ -102,4 +102,23 @@ cv2.imshow('Gray Image',gray_image)
 cv2.waitKey(0)
 ## Output:
 ![image](https://user-images.githubusercontent.com/72431161/104426399-be0c3c80-5536-11eb-9ae0-d22e61910b8e.png)
- 
+ ![image](https://user-images.githubusercontent.com/72431161/104426525-e7c56380-5536-11eb-926d-f499474ec6df.png)
+ ## 5.Develop a program to convert a color image to different color space.
+ ## program:
+import cv2 
+img = cv2.imread('download1.jpg') 
+img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) 
+cv2.imshow('hsv', img) 
+cv2.waitKey(0)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2LAB) 
+cv2.imshow('lab', img) 
+cv2.waitKey(0)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb) 
+cv2.imshow('crcy', img) 
+cv2.waitKey(0)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+cv2.imshow('gray', img) 
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+##Output:
