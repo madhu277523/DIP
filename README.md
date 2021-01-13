@@ -89,4 +89,7 @@ meanImg = im/len(files)
 cv2.imshow(&quot;mean of four pictures&quot;,meanImg)
 cv2.waitKey(0)
  ## Output:
+ ![image](https://user-images.githubusercontent.com/72431161/104425995-33c3d880-5536-11eb-89f7-9729c2054f2c.png)
+ 
+ ## 
  
