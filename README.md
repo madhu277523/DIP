@@ -23,7 +23,7 @@ Loads an image from the specified file.
 ## imwrite()
 THis method is used to save an image to storage devices.
 
-## waitkey()
+## waitKey()
 It is keyboard binding function .The function waits for specified milisecond for any keyboard event.
 
 ## destroyAllWindows()
