@@ -120,6 +120,22 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imshow('gray', img) 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
 ##Output:
+
 ![image](https://user-images.githubusercontent.com/72431161/104426746-2fe48600-5537-11eb-909e-6beaa275a6ba.png)
+
+## 6.develop a program to create an image from 2D array. Generate array of random size.
+## program:
+import numpy as np
+from PIL import Image
+import cv2 as C
+array = np.zeros([100,200,3],dtype=np.uint8)
+array[:,:100]=[150,128,0]
+array[:,100:]=[0,0,255]
+img=Image.fromarray(array)
+img.save('download.jpg')
+img.show()
+C.waitKey(0)
+## Output:
+
+
