@@ -1,5 +1,5 @@
 #DIP
-### Develop a program to display greyscale image using read and write operations.
+### 1. Develop a program to display greyscale image using read and write operations.
 Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.
 
 Importance of grayscaling –
@@ -27,7 +27,7 @@ THis method is used to save an image to storage devices.
 ## waitkey()
 It is keyboard binding function .The function waits for specified milisecond for any keyboard event.
 
-## destroyAllWindow()
+## destroyAllWindows()
  simply destroy all the windows we created.
 
 ![image](https://user-images.githubusercontent.com/72431161/104423517-0e819b00-5533-11eb-8493-a9cadcaa5f9f.png)
@@ -54,7 +54,7 @@ cv2.waitKey(0)
 ## Output:
 ![image](https://user-images.githubusercontent.com/72431161/104424529-5c4ad300-5534-11eb-9cb9-a0cda4d1b767.png)
 ## b)Rotation
-## PROGRAM:
+## Program:
 import cv2
 import numpy as np
 src=cv2.imread('pic.jpg')
@@ -104,6 +104,15 @@ cv2.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72431161/104426399-be0c3c80-5536-11eb-9ae0-d22e61910b8e.png)
  ![image](https://user-images.githubusercontent.com/72431161/104426525-e7c56380-5536-11eb-926d-f499474ec6df.png)
  ## 5.Develop a program to convert a color image to different color space.
+ A color space is actually a combination of two things: a color model and a mapping function.There are many different color spaces that are useful. Some of the more popular color spaces are RGB, YUV, HSV, Lab, and so on.
+ ## HSV
+ It is often more natural to think about a color in terms of hue and saturation than in terms of additive or substractive color component.
+ ## HSL
+ Hue is a degree on the color wheel from 0 to 360. saturation is a percentage value.Lightness is also percentage value. 0% represent black and 100%  represent white.
+ ## Lab
+ L stand for lightnessand a,b for the color spectrums green-red and blue yellow.
+ ## YUV
+ It is a color encoding system typically used as part of color image pipelines
  ## program:
 import cv2 
 img = cv2.imread('download1.jpg') 
