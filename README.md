@@ -101,5 +101,5 @@ cv2.imshow('Original Image',originalimg)
 cv2.imshow('Gray Image',gray_image)
 cv2.waitKey(0)
 ## Output:
-
+![image](https://user-images.githubusercontent.com/72431161/104426399-be0c3c80-5536-11eb-9ae0-d22e61910b8e.png)
  
