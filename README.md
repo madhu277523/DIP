@@ -135,6 +135,12 @@ cv2.destroyAllWindows()
 
 ## 6.develop a program to create an image from 2D array. Generate array of random size.
 ## program:
+## 2D array:
+Two dimensional array is an array within an array.
+It is the type of array,the position of an data element is reffered by two indices instead of one.
+## np.zeros()
+It returns a new array of given shape and type with zeros.
+## Program
 import numpy as np
 from PIL import Image
 import cv2 as C
@@ -145,6 +151,7 @@ img=Image.fromarray(array)
 img.save('download.jpg')
 img.show()
 C.waitKey(0)
+
 ## Output:
 ![image](https://user-images.githubusercontent.com/72431161/104427105-b4370900-5537-11eb-9fb5-3d20f9ee107b.png)
 
