@@ -29,7 +29,7 @@ It is keyboard binding function .The function waits for specified milisecond for
 ## destroyAllWindows()
  simply destroy all the windows we created.
 
-##Output
+## Output
 
 
 ![image](https://user-images.githubusercontent.com/72431161/104423517-0e819b00-5533-11eb-8493-a9cadcaa5f9f.png)
