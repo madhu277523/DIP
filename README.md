@@ -136,7 +136,7 @@ cv2.waitKey(0)
 
 ## Output:
 
-![image](https://user-images.githubusercontent.com/72431161/104426399-be0c3c80-5536-11eb-9ae0-d22e61910b8e.png)
+![image](https://user-images.githubusercontent.com/72431161/104440544-590d1280-5547-11eb-8921-b4836af4f61f.png)
  ![image](https://user-images.githubusercontent.com/72431161/104426525-e7c56380-5536-11eb-926d-f499474ec6df.png)
  
  ## 5.Develop a program to convert a color image to different color space.
