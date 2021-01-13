@@ -38,7 +38,7 @@ It is keyboard binding function .The function waits for specified milisecond for
 ## a)Scaling
 ## b) Rotation
 
-## a)//Scaling
+## a)Scaling
 Image resizing refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image 
 
 ## program:
@@ -61,7 +61,7 @@ cv2.waitKey(0)
 
 ## Output:
 ![image](https://user-images.githubusercontent.com/72431161/104424529-5c4ad300-5534-11eb-9cb9-a0cda4d1b767.png)
-## b)// Rotation
+## b) Rotation
 Image rotation is a common image processing routine used to rotate images at any desired angle. This helps in image reversal, flipping, and obtaining an intended view of the image. Image rotation has applications in matching, alignment, and other image-based algorithms. OpenCV is a well-known library used for image processing.
 
 ## Program:
@@ -119,7 +119,8 @@ cv2.imshow('black and whiteimage',blackAndWhiteImage)
 cv2.imshow('Original Image',originalimg)
 cv2.imshow('Gray Image',gray_image)
 cv2.waitKey(0)
-## cv2.threshold works as, if pixel value is greater than a threshold value, it is assigned one value (may be white), else it is assigned another value (may be black). 
+
+ cv2.threshold works as, if pixel value is greater than a threshold value, it is assigned one value (may be white), else it is assigned another value (may be black). 
 
 ## Output:
 
