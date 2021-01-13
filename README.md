@@ -196,8 +196,7 @@ C.waitKey(0)
 It returns a new array of given shape and type with zeros.
 
 ## Output:
-![image](https://user-images.githubusercontent.com/72431161/104427105-b4370900-5537-11eb-9fb5-3d20f9ee107b.png)
-
+![image](https://user-images.githubusercontent.com/72431161/104440309-0895b500-5547-11eb-9082-e37c273983e6.png)
 ## 7. write a program to find the sum of neighbour values in a matrix .
 
 import numpy as np
