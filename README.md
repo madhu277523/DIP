@@ -61,6 +61,7 @@ cv2.waitKey(0)
 
 ## Output:
 ![image](https://user-images.githubusercontent.com/72431161/104424529-5c4ad300-5534-11eb-9cb9-a0cda4d1b767.png)
+
 ## b) Rotation
 Image rotation is a common image processing routine used to rotate images at any desired angle. This helps in image reversal, flipping, and obtaining an intended view of the image. Image rotation has applications in matching, alignment, and other image-based algorithms. OpenCV is a well-known library used for image processing.
 
@@ -74,7 +75,8 @@ img=cv2.rotate(src,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow(windowsname,img)
 cv2.waitKey(0)
 
-Output:
+## Output:
+
 ![image](https://user-images.githubusercontent.com/72431161/104425348-6caf7d80-5535-11eb-8568-24656759f92a.png)
 
 ## 3. Develop a program to find sum and mean of a set of images.
