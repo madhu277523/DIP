@@ -198,3 +198,31 @@ It returns a new array of given shape and type with zeros.
 ## Output:
 ![image](https://user-images.githubusercontent.com/72431161/104427105-b4370900-5537-11eb-9fb5-3d20f9ee107b.png)
 
+7. write a program to find the sum of neighbour values in a matrix 
+import numpy as np
+
+M = [[1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]] 
+
+M = np.asarray(M)
+N = np.zeros(M.shape)
+def sumNeighbors(M,x,y):
+    l = []
+    for i in range(max(0,x-1),x+2):
+        for j in range(max(0,y-1),y+2):
+            try:
+                t = M[i][j]
+                l.append(t)
+            except IndexError: 
+                pass
+    return sum(l)-M[x][y] 
+for i in range(M.shape[0]):
+    for j in range(M.shape[1]):
+        N[i][j] = sumNeighbors(M, i, j)
+
+print ( "Original matrix:\n", M)
+print  ("Summed neighbors matrix:\n", N)
+
+## Output:
+
