@@ -32,3 +32,4 @@ It is keyboard binding function .The function waits for specified milisecond for
 
 ![image](https://user-images.githubusercontent.com/72431161/104419364-60abd600-559e-11eb-9505-d25d37ce7426.png)
 
+
