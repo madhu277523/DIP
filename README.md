@@ -175,7 +175,7 @@ This method is used to convert an image from one color space to another.
 
 ![image](https://user-images.githubusercontent.com/72431161/104426746-2fe48600-5537-11eb-909e-6beaa275a6ba.png)
 
-## 6.develop a program to create an image from 2D array. Generate array of random size.
+## 6.Develop a program to create an image from 2D array. Generate array of random size.
 ## program:
 
 ## 2D array:
