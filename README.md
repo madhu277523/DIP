@@ -227,7 +227,7 @@ print  ("Summed neighbors matrix:\n", N)
 
 ![image](https://user-images.githubusercontent.com/72431161/104438786-3e399e80-5545-11eb-9c8f-30877b45d6a4.png)
 
-## operator overloding
+## 7 operator overloding
 #include <iostream>
 using namespace std;
 class matrix
@@ -343,3 +343,16 @@ return 0;
 
 ## output:
 count:8
+## Finding the neighborhod value of matrix.
+import numpy as np
+i=0
+j=0
+a= np.array([[1,2,3,4,5], [2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8],[5,6,7,8,9]])
+print("a : ",str(a))
+def neighbors(radius, rowNumber, columnNumber):
+     return [[a[i][j] if  i >= 0 and i < len(a) and j >= 0 and j < len(a[0]) else 0
+                for j in range(columnNumber-1-radius, columnNumber+radius)]
+                    for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1, 2, 3)
+## Output:
+
