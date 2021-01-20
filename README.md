@@ -344,17 +344,3 @@ return 0;
 ## output:
 ![image](https://user-images.githubusercontent.com/72431161/105156111-42733800-5ac0-11eb-9a40-76a3ef927e3b.png)
 
-## 9 Finding the neighborhod value of matrix.
-import numpy as np
-i=0
-j=0
-a= np.array([[1,2,3,4,5], [2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8],[5,6,7,8,9]])
-print("a : ",str(a))
-def neighbors(radius, rowNumber, columnNumber):
-     return [[a[i][j] if  i >= 0 and i < len(a) and j >= 0 and j < len(a[0]) else 0
-                for j in range(columnNumber-1-radius, columnNumber+radius)]
-                    for i in range(rowNumber-1-radius, rowNumber+radius)]
-neighbors(1, 2, 3)
-## Output:
-![image](https://user-images.githubusercontent.com/72431161/105155291-45215d80-5abf-11eb-9b5b-9746fda612a9.png)
-
