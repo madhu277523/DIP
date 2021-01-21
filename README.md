@@ -343,6 +343,7 @@ return 0;
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72431161/105156111-42733800-5ac0-11eb-9a40-76a3ef927e3b.png)
+## 9.Finding the neighbourhod of
 ## 10.Negation of image
 Image negative is produced by subtracting each pixel from the maximum intensity value. e.g. for an 8-bit image, the max intensity value is 28– 1 = 255, thus each pixel is subtracted from 255 to produce the output image.
 
@@ -406,7 +407,8 @@ if cv2.waitKey(0) & 0xff == 27:
     cv2.destroyAllWindows()
     
 ![image](https://user-images.githubusercontent.com/72431161/105329756-5a14f400-5b86-11eb-8229-df9e78cf3dfe.png)
-## 5).contrast image.
+## 5).Program to perform contrast transformation on  image.
+
 import cv2
 from PIL import Image, ImageEnhance
 img = Image.open("Nature-Wallpaper1.jpg")
