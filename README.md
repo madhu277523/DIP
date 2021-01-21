@@ -343,4 +343,22 @@ return 0;
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72431161/105156111-42733800-5ac0-11eb-9a40-76a3ef927e3b.png)
+## 10.Negation of image
+Image negative is produced by subtracting each pixel from the maximum intensity value. e.g. for an 8-bit image, the max intensity value is 28– 1 = 255, thus each pixel is subtracted from 255 to produce the output image.
+
+Thus, the transformation function used in image negative is
+
+s = T(r) = L – 1 – r
+
+Where L-1 is the max intensity value and s, and r are the output and input pixel values respectively.
+
+For grayscale images, light areas appear dark and vice versa. For color images, colors are replaced by their complementary colors. Thus, red areas appear cyan, greens appear magenta, and blues appear yellow, and vice versa.
+Program:
+import cv2
+img = cv2.imread("images.jpg")
+cv2.imshow('orinal image',img)
+img_neg = 255-img
+cv2.imshow('negative',img_neg)
+cv2.waitKey(0)
+##Output:
 
