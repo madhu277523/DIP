@@ -227,7 +227,7 @@ print  ("Summed neighbors matrix:\n", N)
 
 ![image](https://user-images.githubusercontent.com/72431161/104438786-3e399e80-5545-11eb-9c8f-30877b45d6a4.png)
 
-## 8 Write a c++n program to to perform operator overloding
+## 8 Write a c++ program to to perform operator overloding
 #include <iostream>
 using namespace std;
 class matrix
