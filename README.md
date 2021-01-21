@@ -380,9 +380,13 @@ gamma_point_four=np.array(255*(img/255)**0.24,dtype='uint8')
 img3 = cv2.hconcat([gamma_two_point_two,gamma_point_four])
 cv2.imshow('a2',img3)
 cv2.waitKey(0)
+
 ## Output:
+
+
 ![image](https://user-images.githubusercontent.com/72431161/105329279-d1965380-5b85-11eb-9de0-b7e47d94da1d.png)
 ![image](https://user-images.githubusercontent.com/72431161/105329358-ed99f500-5b85-11eb-9d7f-98dbd4ca6bdb.png)
+
 4.Threshholding
 import cv2  
 import numpy as np  
@@ -400,4 +404,5 @@ cv2.imshow('Set to 0', thresh4)
 cv2.imshow('Set to 0 Inverted', thresh5)  
 if cv2.waitKey(0) & 0xff == 27:  
     cv2.destroyAllWindows()
+    
 ![image](https://user-images.githubusercontent.com/72431161/105329756-5a14f400-5b86-11eb-8229-df9e78cf3dfe.png)
