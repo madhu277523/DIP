@@ -382,4 +382,4 @@ cv2.imshow('a2',img3)
 cv2.waitKey(0)
 ## Output:
 ![image](https://user-images.githubusercontent.com/72431161/105329279-d1965380-5b85-11eb-9de0-b7e47d94da1d.png)
-
+![image](https://user-images.githubusercontent.com/72431161/105329358-ed99f500-5b85-11eb-9d7f-98dbd4ca6bdb.png)
