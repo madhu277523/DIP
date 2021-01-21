@@ -387,7 +387,7 @@ cv2.waitKey(0)
 ![image](https://user-images.githubusercontent.com/72431161/105329279-d1965380-5b85-11eb-9de0-b7e47d94da1d.png)
 ![image](https://user-images.githubusercontent.com/72431161/105329358-ed99f500-5b85-11eb-9d7f-98dbd4ca6bdb.png)
 
-4.Threshholding
+## 4.Threshholding
 import cv2  
 import numpy as np  
 image1 = cv2.imread('images.jpg')  
@@ -406,3 +406,14 @@ if cv2.waitKey(0) & 0xff == 27:
     cv2.destroyAllWindows()
     
 ![image](https://user-images.githubusercontent.com/72431161/105329756-5a14f400-5b86-11eb-8229-df9e78cf3dfe.png)
+## 5).contrast image.
+import cv2
+from PIL import Image, ImageEnhance
+img = Image.open("Nature-Wallpaper1.jpg")
+img.show()
+img=ImageEnhance.Color(img)
+img.enhance(2.0).show()
+cv2.waitKey(0) 
+cv2.destroyAllWindows()
+
+##Output:
