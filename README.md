@@ -364,3 +364,21 @@ cv2.waitKey(0)
 
 ![image](https://user-images.githubusercontent.com/72431161/105327019-461bc300-5b83-11eb-9f5c-4cbbc15f07c7.png)
 ![image](https://user-images.githubusercontent.com/72431161/105327168-6d729000-5b83-11eb-959a-93517da303b9.png)
+## 11.program to perform gamma transformation
+
+These transformations can be given by the expression:
+s=cr^γ
+This symbol γ is called gamma, due to which this transformation is also known as gamma transformation.
+This type of transformation is used for enhancing images for different type of display devices. The gamma of different display devices is different. For example Gamma of CRT lies in between of 1.8 to 2.5, that means the image displayed on CRT is dark.
+##program;
+
+import cv2
+import numpy as np
+img = cv2.imread("images.jpg")
+gamma_two_point_two=np.array(255*(img/255)**2.2, dtype='uint8')
+gamma_point_four=np.array(255*(img/255)**0.24,dtype='uint8')
+img3 = cv2.hconcat([gamma_two_point_two,gamma_point_four])
+cv2.imshow('a2',img3)
+cv2.waitKey(0)
+## Output:
+
