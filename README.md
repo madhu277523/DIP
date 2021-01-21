@@ -343,80 +343,15 @@ return 0;
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72431161/105156111-42733800-5ac0-11eb-9a40-76a3ef927e3b.png)
-## 9.Finding the neighbourhod of
-## 10.Negation of image
-Image negative is produced by subtracting each pixel from the maximum intensity value. e.g. for an 8-bit image, the max intensity value is 28– 1 = 255, thus each pixel is subtracted from 255 to produce the output image.
-
-Thus, the transformation function used in image negative is
-
-s = T(r) = L – 1 – r
-
-Where L-1 is the max intensity value and s, and r are the output and input pixel values respectively.
-
-For grayscale images, light areas appear dark and vice versa. For color images, colors are replaced by their complementary colors. Thus, red areas appear cyan, greens appear magenta, and blues appear yellow, and vice versa.
-Program:
-import cv2
-img = cv2.imread("images.jpg")
-cv2.imshow('orinal image',img)
-img_neg = 255-img
-cv2.imshow('negative',img_neg)
-cv2.waitKey(0)
-##Output:
-
-![image](https://user-images.githubusercontent.com/72431161/105327019-461bc300-5b83-11eb-9f5c-4cbbc15f07c7.png)
-![image](https://user-images.githubusercontent.com/72431161/105327168-6d729000-5b83-11eb-959a-93517da303b9.png)
-## 11.program to perform gamma transformation
-
-These transformations can be given by the expression:
-s=cr^γ
-This symbol γ is called gamma, due to which this transformation is also known as gamma transformation.
-This type of transformation is used for enhancing images for different type of display devices. The gamma of different display devices is different. For example Gamma of CRT lies in between of 1.8 to 2.5, that means the image displayed on CRT is dark.
-##program;
-
-import cv2
+## Finding the neighborhod of matrix.
 import numpy as np
-img = cv2.imread("images.jpg")
-gamma_two_point_two=np.array(255*(img/255)**2.2, dtype='uint8')
-gamma_point_four=np.array(255*(img/255)**0.24,dtype='uint8')
-img3 = cv2.hconcat([gamma_two_point_two,gamma_point_four])
-cv2.imshow('a2',img3)
-cv2.waitKey(0)
-
-## Output:
-
-
-![image](https://user-images.githubusercontent.com/72431161/105329279-d1965380-5b85-11eb-9de0-b7e47d94da1d.png)
-![image](https://user-images.githubusercontent.com/72431161/105329358-ed99f500-5b85-11eb-9d7f-98dbd4ca6bdb.png)
-
-## 4.Threshholding
-import cv2  
-import numpy as np  
-image1 = cv2.imread('images.jpg')  
-img = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
-ret, thresh1 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY)
-ret, thresh2 = cv2.threshold(img, 120, 255, cv2.THRESH_BINARY_INV)
-ret, thresh3 = cv2.threshold(img, 120, 255, cv2.THRESH_TRUNC)
-ret, thresh4 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO)
-ret, thresh5 = cv2.threshold(img, 120, 255, cv2.THRESH_TOZERO_INV)
-cv2.imshow('Binary Threshold', thresh1)
-cv2.imshow('Binary Threshold Inverted', thresh2)
-cv2.imshow('Truncated Threshold', thresh3)
-cv2.imshow('Set to 0', thresh4)
-cv2.imshow('Set to 0 Inverted', thresh5)  
-if cv2.waitKey(0) & 0xff == 27:  
-    cv2.destroyAllWindows()
-    
-![image](https://user-images.githubusercontent.com/72431161/105329756-5a14f400-5b86-11eb-8229-df9e78cf3dfe.png)
-## 5).Program to perform contrast transformation on  image.
-
-import cv2
-from PIL import Image, ImageEnhance
-img = Image.open("Nature-Wallpaper1.jpg")
-img.show()
-img=ImageEnhance.Color(img)
-img.enhance(2.0).show()
-cv2.waitKey(0) 
-cv2.destroyAllWindows()
+ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
+print("initial_array : ", str(ini_array));
+def neighbors(radius, rowNumber, columnNumber):
+    return[[ini_array[i][j]if i >= 0 and i < len(ini_array) and j >= 0 and j < len(ini_array[0]) else 0
+            for j in range(columnNumber-1-radius, columnNumber+radius)]
+           for i in range(rowNumber-1-radius, rowNumber+radius)]
+neighbors(1, 2, 2)
 
 ##Output:
-![image](https://user-images.githubusercontent.com/72431161/105341714-483a4d80-5b94-11eb-82b5-4967715cc5a9.png)
+
