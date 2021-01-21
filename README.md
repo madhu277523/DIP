@@ -343,7 +343,7 @@ return 0;
 
 ## output:
 ![image](https://user-images.githubusercontent.com/72431161/105156111-42733800-5ac0-11eb-9a40-76a3ef927e3b.png)
-## Finding the neighborhod of matrix.
+## 9. Finding the neighborhod of matrix.
 import numpy as np
 ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
 print("initial_array : ", str(ini_array));
@@ -354,4 +354,4 @@ def neighbors(radius, rowNumber, columnNumber):
 neighbors(1, 2, 2)
 
 ##Output:
-
+![image](https://user-images.githubusercontent.com/72431161/105343372-62752b00-5b96-11eb-9d33-1fe3c3d9bcdf.png)
