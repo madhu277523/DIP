@@ -381,4 +381,5 @@ img3 = cv2.hconcat([gamma_two_point_two,gamma_point_four])
 cv2.imshow('a2',img3)
 cv2.waitKey(0)
 ## Output:
+![image](https://user-images.githubusercontent.com/72431161/105329279-d1965380-5b85-11eb-9de0-b7e47d94da1d.png)
 
