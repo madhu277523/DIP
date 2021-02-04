@@ -44,6 +44,7 @@ It is keyboard binding function .The function waits for specified milisecond for
 Image resizing refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image 
 
 ## program:
+``` python
 import cv2
 import numpy as np
 src=cv2.imread('pic.jpg')
@@ -56,7 +57,7 @@ dsize=(width,height)
 result=cv2.resize(src,dsize)
 cv2.imshow('scaling',result)
 cv2.waitKey(0)
-
+```
 ## cv2.resize(): 
  This method refers to the scaling of images. Scaling comes handy in many image processing as well as machine learning applications. It helps in reducing the number of pixels from an image .
  
@@ -70,6 +71,7 @@ cv2.waitKey(0)
 Image rotation is a common image processing routine used to rotate images at any desired angle. This helps in image reversal, flipping, and obtaining an intended view of the image. Image rotation has applications in matching, alignment, and other image-based algorithms. OpenCV is a well-known library used for image processing.
 
 ## Program:
+``` python
 import cv2
 import numpy as np
 src=cv2.imread('pic.jpg')
@@ -78,7 +80,7 @@ windowsname=img
 img=cv2.rotate(src,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow(windowsname,img)
 cv2.waitKey(0)
-
+```
 ## Output:
 
 ![image](https://user-images.githubusercontent.com/72431161/104425348-6caf7d80-5535-11eb-8568-24656759f92a.png)
@@ -90,6 +92,7 @@ You can add two images with the OpenCV function, cv. add(), or simply by the num
 The function mean calculates the mean value M of array elements, independently for each channel, and return it:" This mean it should return you a scalar for each layer of you image
 
 ## program:
+``` python
 import cv2
 import os
 path = 'C:\Pictures'
@@ -109,6 +112,7 @@ cv2.imshow(&quot;sum of four pictures&quot;,im)
 meanImg = im/len(files)
 cv2.imshow(&quot;mean of four pictures&quot;,meanImg)
 cv2.waitKey(0)
+```
 
  ## append():
  This method in python adds a single item to the existing list.
@@ -122,7 +126,7 @@ This method in python is used to get the list of all files and directories in th
  
  Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.
 A binary image is a monochromatic image that consists of pixels that can have one of exactly two colors, usually black and white.
-
+``` python
 import cv2
 originalimg=cv2.imread('pic.jpg')
 gray_image=cv2.cvtColor(originalimg,cv2.COLOR_BGR2GRAY)
@@ -131,6 +135,7 @@ cv2.imshow('black and whiteimage',blackAndWhiteImage)
 cv2.imshow('Original Image',originalimg)
 cv2.imshow('Gray Image',gray_image)
 cv2.waitKey(0)
+```
 
  cv2.threshold works as, if pixel value is greater than a threshold value, it is assigned one value (may be white), else it is assigned another value (may be black). 
 
@@ -151,6 +156,7 @@ cv2.waitKey(0)
  It is a color encoding system typically used as part of color image pipelines
  
  ## program:
+ ``` python
 import cv2 
 img = cv2.imread('download1.jpg') 
 img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) 
@@ -166,6 +172,7 @@ img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 cv2.imshow('gray', img) 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+```
 
 ## cv2.cvtColor()
 This method is used to convert an image from one color space to another.   
@@ -181,6 +188,7 @@ Two dimensional array is an array within an array.
 It is the type of array,the position of an data element is reffered by two indices instead of one.However, 2D arrays are created to implement a relational database look alike data structure.
 
 ## Program:
+``` python
 import numpy as np
 from PIL import Image
 import cv2 as C
@@ -191,13 +199,14 @@ img=Image.fromarray(array)
 img.save('download.jpg')
 img.show()
 C.waitKey(0)
+```
 ## np.zeros():
 It returns a new array of given shape and type with zeros.
 
 ## Output:
 ![image](https://user-images.githubusercontent.com/72431161/104440309-0895b500-5547-11eb-9082-e37c273983e6.png)
 ## 7. write a program to find the sum of neighbour values in a matrix .
-
+``` python
 import numpy as np
 
 M = [[1, 2, 3],
@@ -222,7 +231,7 @@ for i in range(M.shape[0]):
 
 print ( "Original matrix:\n", M)
 print  ("Summed neighbors matrix:\n", N)
-
+```
 ## Output:
 
 ![image](https://user-images.githubusercontent.com/72431161/104438786-3e399e80-5545-11eb-9c8f-30877b45d6a4.png)
