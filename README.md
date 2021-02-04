@@ -237,6 +237,7 @@ print  ("Summed neighbors matrix:\n", N)
 ![image](https://user-images.githubusercontent.com/72431161/104438786-3e399e80-5545-11eb-9c8f-30877b45d6a4.png)
 
 ## 8 Write a c++ program to to perform operator overloding
+``` python
 #include <iostream>
 using namespace std;
 class matrix
@@ -349,10 +350,11 @@ int main()
  p * q;
 return 0;
 }
-
+```
 ## output:
 ![image](https://user-images.githubusercontent.com/72431161/105156111-42733800-5ac0-11eb-9a40-76a3ef927e3b.png)
 ## 9. Finding the neighborhod of matrix.
+``` python
 import numpy as np
 ini_array = np.array([[1, 2,5, 3], [4,5, 4, 7], [9, 6, 1,0]])
 print("initial_array : ", str(ini_array));
@@ -361,6 +363,6 @@ def neighbors(radius, rowNumber, columnNumber):
             for j in range(columnNumber-1-radius, columnNumber+radius)]
            for i in range(rowNumber-1-radius, rowNumber+radius)]
 neighbors(1, 2, 2)
-
+```
 ##Output:
 ![image](https://user-images.githubusercontent.com/72431161/105343372-62752b00-5b96-11eb-9d33-1fe3c3d9bcdf.png)
