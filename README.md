@@ -9,7 +9,7 @@ Reduces model complexity: Consider training neural article on RGB images of 10x1
 For other algorithms to work: There are many algorithms that are customized to work only on grayscaled images e.g. Canny edge detection function pre-implemented in OpenCV library works on Grayscaled images only.
 
 ## Program:
-
+```
 import cv2
 image=cv2.imread('pic.jpg')
 cv2.imshow('orinal image',image)
@@ -18,7 +18,7 @@ cv2.imshow('grayscale',gray_image)
 cv2.waitKey(0)
 cv2.imwrite("rose.jpg',gray_image)
 cv2.destroyAllWindows()
-
+```
 ## imread():
 Loads an image from the specified file.
 
